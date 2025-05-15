@@ -1,0 +1,57 @@
+/* Leonardo Solovijovas Santos - BV3032485*/
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #9dafac;
+    text-align: center;
+}
+
+h1 {
+    font-size: 1.5rem; /* Tamanho menor */
+    margin-top: 20px;
+    color: #000;
+}
+
+.form-container {
+    background-color: #4d877e;
+    padding: 15px; /* Reduzido o padding para diminuir altura */
+    margin: 30px auto;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #00000055;
+    max-width: 350px; /* Largura reduzida */
+    width: 90%;
+    color: white;
+    text-align: left;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 6px; /* Reduzido o padding */
+    margin: 5px 0;
+    border: 1px solid #000;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 0.9rem; /* Diminuído o tamanho da fonte dos campos */
+}
+
+textarea {
+    height: 80px; /* Altura reduzida para textarea */
+}
+
+button {
+    margin: 8px 5px 0 0;
+    padding: 6px 12px; /* Botões com padding reduzido */
+    border: none;
+    border-radius: 5px;
+    color: white;
+}
+
+.bg-danger {
+    background-color: #dc3545;
+}
+
+.bg-info {
+    background-color: #17a2b8;
+}

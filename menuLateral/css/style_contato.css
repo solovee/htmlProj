@@ -1,12 +1,13 @@
-body{
+/* Leonardo Solovijovas Santos - BV3032485*/
+
+body {
     font-family: Arial, sans-serif;
     background-color: rgb(157, 175, 172);
-    /*background-image: url(/ListasImagensLinks/images/gatoCoelho.jpg);*/
-    text-align: center ;
+    text-align: center;
 }
 
 .container {
-    width: 50%;
+    width: 600px; /* valor fixo */
     margin: 50px auto;
     background-color: rgb(77, 135, 126);
     padding: 20px;
@@ -15,10 +16,10 @@ body{
 }
 
 input, textarea {
-    width: 100%;
+    width: 560px; /* valor fixo compatível com o container (menos padding) */
     padding: 8px;
     margin: 5px 0;
     border: 1px solid #000000;
     border-radius: 4px;
-    box-sizing: border-box;
+    /* Removido box-sizing para não alterar cálculo da largura */
 }

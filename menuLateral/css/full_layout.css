@@ -1,7 +1,4 @@
-/*
-    Author: João Pedro Machado Silva - BV3032477 
-    Data da Implementação: 17/04/2025
-*/
+/* Leonardo Solovijovas Santos - BV3032485*/
 
 body{
     margin: 0;
@@ -75,3 +72,48 @@ body{
     align-items: center;
     justify-content: center;
 }
+
+/* Tamanho normal do menu lateral */
+.sidebar-nav {
+    width: 200px;
+}
+
+/* ===== Média (entre 768px e 1024px) ===== */
+@media (max-width: 1024px) and (min-width: 768px) {
+    .sidebar-nav {
+        width: 150px;
+        padding: 15px;
+    }
+
+    .menu-links li a {
+        font-size: 14px;
+        padding: 10px;
+    }
+}
+
+/* ===== Pequena (até 767px) ===== */
+@media (max-width: 767px) {
+    .sidebar-nav {
+        width: 100px;
+        padding: 10px;
+    }
+
+    .menu-links li a {
+        font-size: 12px;
+        padding: 8px;
+    }
+}
+
+/* ===== Pequena (até 767px) ===== */
+@media (max-width: 500px) {
+    .sidebar-nav {
+        width: 60px;
+        padding: 5px;
+    }
+
+    .menu-links li a {
+        font-size: 12px;
+        padding: 8px;
+    }
+}
+
