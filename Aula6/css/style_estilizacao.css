@@ -1,0 +1,27 @@
+/*
+    Author: João Pedro Machado Silva - BV3032477 
+    Data da Implementação: 10/04/2025
+*/
+
+body{
+    background-color: rgb(67, 64, 59);
+}
+
+h1{
+    color: rgb(195, 56, 56);
+    margin-left: 40px;
+}
+
+p{
+    color: rgba(173, 49, 49, 0.684);
+    text-align: center;
+}
+
+#paragrafo1{
+    color: black;
+}
+
+.para{
+    color: rgb(139, 52, 52);
+    font-size: 20px;
+}

@@ -1,0 +1,82 @@
+<!-- Leonardo Solovijovas Santos - BV3032485     -     06/03/2025 -->
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato - Oficina de Cinema</title>
+    <link rel="stylesheet" href="/Formularios/css/style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Oficina de Cinema</h1>
+    </header>
+
+  
+
+    <main>
+        <h2>Formulário de Contato</h2>
+
+        <form action="#" method="post">
+            <label for="nome">Nome completo:</label>
+            <input type="text" id="nome" name="nome" required pattern="[A-Za-zÀ-ÿ\s]{3,}" title="Digite seu nome completo com pelo menos 3 letras.">
+
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="telefone">Telefone:</label>
+            <input type="tel" id="telefone" name="telefone" required pattern="\d{10,11}" title="Digite apenas números com DDD. Ex: 11912345678">
+
+            <label for="genero">Gênero:</label><br>
+            <input type="radio" name="genero" value="masculino" required> Masculino<br>
+            <input type="radio" name="genero" value="feminino"> Feminino<br>
+            <input type="radio" name="genero" value="outro"> Outro<br><br>
+
+            <label for="cidade">Cidade de interesse:</label>
+            <select name="cidade" id="cidade" required>
+                <option value="">-- Selecione --</option>
+                <option value="sao_paulo">São Paulo</option>
+                <option value="rio_de_janeiro">Rio de Janeiro</option>
+                <option value="brasilia">Brasília</option>
+                <option value="salvador">Salvador</option>
+            </select>
+
+            <label for="mensagem">Mensagem:</label>
+            <textarea name="mensagem" id="mensagem" rows="5" required minlength="10" placeholder="Explique por que deseja participar da oficina."></textarea>
+
+            <label for="divulgacao">Como soube da oficina?</label>
+            <input list="canais" name="divulgacao" id="divulgacao" required>
+            <datalist id="canais">
+                <option value="Instagram">
+                <option value="Facebook">
+                <option value="Google">
+                <option value="Amigos">
+                <option value="Escola">
+            </datalist>
+
+            <label for="senha">Crie uma senha:</label>
+            <input type="password" id="senha" name="senha" required pattern=".{6,}" title="A senha deve ter no mínimo 6 caracteres.">
+
+            <label>Gêneros de filmes que você gosta:</label><br>
+            <input type="checkbox" name="filme[]" value="drama"> Drama<br>
+            <input type="checkbox" name="filme[]" value="ficcao"> Ficção<br>
+            <input type="checkbox" name="filme[]" value="comedia"> Comédia<br>
+            <input type="checkbox" name="filme[]" value="documentario"> Documentário<br>
+            <input type="checkbox" name="filme[]" value="acao"> Ação<br><br>
+
+            <button type="reset">Limpar</button>
+            <button type="submit">Enviar</button>
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Oficina de Cinema. Todos os direitos reservados.</p>
+    </footer>
+
+</body>
+
+</html>
